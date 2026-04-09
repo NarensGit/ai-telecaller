@@ -1,0 +1,868 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <title>AI Tele Caller — Intelligent Calling That Converts</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- LANDING GATE -->
+  <div class="landing-gate" id="landing-gate">
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="blob blob-3"></div>
+    <nav class="lg-nav">
+      <div class="lg-brand">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+          <rect width="24" height="24" rx="7" fill="#2563eb" />
+          <path
+            d="M7 12.5C7 10.015 9.015 8 11.5 8h1C14.985 8 17 10.015 17 12.5S14.985 17 12.5 17h-1C9.015 17 7 14.985 7 12.5z"
+            fill="white" />
+          <circle cx="12.5" cy="12.5" r="2" fill="#2563eb" />
+        </svg>
+        <span>AI Tele Caller</span>
+      </div>
+      <div class="lg-nav-links">
+        <a href="#" class="lg-link">Features</a>
+        <a href="#" class="lg-link">Pricing</a>
+        <a href="#" class="lg-link">Docs</a>
+      </div>
+      <div class="lg-nav-ctas">
+        <button class="btn btn-ghost" onclick="enterApp('dashboard')">Sign In</button>
+        <button class="btn btn-primary" onclick="openModal()">Get Started Free</button>
+      </div>
+    </nav>
+    <div class="lg-hero">
+      <div class="lg-hero-left">
+        <div class="hero-badge">🚀 AI-Powered · No-Code Setup · Enterprise-Ready</div>
+        <h1 class="lg-h1">AI Tele Caller —<br><span class="gradient-text">Intelligent Calling</span><br>That Converts
+        </h1>
+        <p class="lg-sub">Automate your entire outreach with human-like AI conversations. Real-time sentiment, adaptive
+          scripts, and live coaching — all in one platform.</p>
+        <div class="lg-ctas">
+          <button class="btn btn-primary btn-lg" onclick="openModal()">Start Campaign</button>
+          <button class="btn btn-outline btn-lg" onclick="enterApp('call')">View Demo →</button>
+        </div>
+        <div class="lg-proof">
+          <div class="lp-avs">
+            <div class="lp-av" style="background:#dbeafe;color:#2563eb">JM</div>
+            <div class="lp-av" style="background:#dcfce7;color:#16a34a">RK</div>
+            <div class="lp-av" style="background:#fef9c3;color:#ca8a04">TC</div>
+            <div class="lp-av" style="background:#fae8ff;color:#7c3aed">SP</div>
+          </div>
+          <span><strong>2,400+</strong> sales teams trust AI Tele Caller</span>
+        </div>
+      </div>
+      <div class="lg-hero-right">
+        <div class="hero-mockup">
+          <div class="mockup-bar"><span class="mb-r"></span><span class="mb-y"></span><span class="mb-g"></span><span
+              class="mb-title">AI Tele Caller — Dashboard</span></div>
+          <div class="mockup-body">
+            <div class="mk-stats">
+              <div class="mk-stat">
+                <div class="mk-val">1,284</div>
+                <div class="mk-lbl">Calls Today</div>
+              </div>
+              <div class="mk-stat">
+                <div class="mk-val" style="color:#16a34a">23.8%</div>
+                <div class="mk-lbl">Conversion</div>
+              </div>
+              <div class="mk-stat">
+                <div class="mk-val" style="color:#2563eb">48</div>
+                <div class="mk-lbl">Demos</div>
+              </div>
+              <div class="mk-stat">
+                <div class="mk-val" style="color:#7c3aed">4m 32s</div>
+                <div class="mk-lbl">Avg Duration</div>
+              </div>
+            </div>
+            <div class="mk-live"><span class="pdot"></span> Live — David Wilson · 04:27</div>
+            <div class="mk-sent-row"><span>Sentiment</span><span style="color:#16a34a;font-weight:600">Positive
+                72%</span></div>
+            <div class="mk-sent-bar">
+              <div style="width:72%;height:100%;background:linear-gradient(90deg,#22c55e,#4ade80);border-radius:99px">
+              </div>
+            </div>
+            <div class="mk-bars">
+              <div class="mk-bar-row"><span>Q2 Enterprise</span>
+                <div class="mk-bar-track">
+                  <div class="mk-bar-fill" style="width:68%"></div>
+                </div><span>68%</span>
+              </div>
+              <div class="mk-bar-row"><span>SMB Spring</span>
+                <div class="mk-bar-track">
+                  <div class="mk-bar-fill" style="width:44%;background:#0ea5e9"></div>
+                </div><span>44%</span>
+              </div>
+              <div class="mk-bar-row"><span>Renewal</span>
+                <div class="mk-bar-track">
+                  <div class="mk-bar-fill" style="width:82%;background:#7c3aed"></div>
+                </div><span>82%</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="lg-features">
+      <div class="lgf"><span>🧠</span> Intelligent Conversations</div>
+      <div class="lgf-d"></div>
+      <div class="lgf"><span>📊</span> Real-Time Insights</div>
+      <div class="lgf-d"></div>
+      <div class="lgf"><span>⚡</span> Automated Campaigns</div>
+      <div class="lgf-d"></div>
+      <div class="lgf"><span>🎯</span> Conversion Tracking</div>
+      <div class="lgf-d"></div>
+      <div class="lgf"><span>🔗</span> CRM Integration</div>
+    </div>
+  </div>
+
+  <!-- MODAL -->
+  <div class="modal-overlay" id="start-modal" onclick="handleModalClick(event)">
+    <div class="modal-card" id="modal-card">
+      <div class="modal-icon">🚀</div>
+      <h2 class="modal-title">Start Your First Campaign</h2>
+      <p class="modal-sub">Launch AI-powered calling in under 2 minutes. Our setup wizard guides you through everything.
+      </p>
+      <div class="modal-feats">
+        <div class="mf">✓ AI voice persona selection</div>
+        <div class="mf">✓ Upload up to 50,000 contacts</div>
+        <div class="mf">✓ Smart scheduling &amp; DND filtering</div>
+      </div>
+      <div class="modal-actions">
+        <button class="btn btn-primary btn-lg" style="width:100%;justify-content:center"
+          onclick="enterApp('campaign')">Set Up Campaign →</button>
+        <button class="btn btn-ghost" style="width:100%;justify-content:center" onclick="closeModal()">Maybe
+          later</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- APP SHELL -->
+  <div class="app-shell hidden" id="app-shell">
+    <aside class="sidebar">
+      <div class="sidebar-logo">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+          <rect width="24" height="24" rx="7" fill="#2563eb" />
+          <path
+            d="M7 12.5C7 10.015 9.015 8 11.5 8h1C14.985 8 17 10.015 17 12.5S14.985 17 12.5 17h-1C9.015 17 7 14.985 7 12.5z"
+            fill="white" />
+          <circle cx="12.5" cy="12.5" r="2" fill="#2563eb" />
+        </svg>
+        <span class="logo-text">AI Tele Caller</span>
+      </div>
+      <nav class="sidebar-nav">
+        <div class="nav-label">Platform</div>
+        <button class="nav-item" id="nav-campaign" onclick="go('campaign')">
+          <svg class="ni" viewBox="0 0 20 20" fill="currentColor">
+            <path d="M2 5a2 2 0 012-2h7a2 2 0 012 2v4a2 2 0 01-2 2H9l-3 3v-3H4a2 2 0 01-2-2V5z" />
+          </svg>
+          Campaign <span class="nav-badge">3</span>
+        </button>
+        <button class="nav-item" id="nav-call" onclick="go('call')">
+          <svg class="ni" viewBox="0 0 20 20" fill="currentColor">
+            <path
+              d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
+          </svg>
+          Live Call <span class="nav-badge live">●</span>
+        </button>
+        <button class="nav-item active" id="nav-dashboard" onclick="go('dashboard')">
+          <svg class="ni" viewBox="0 0 20 20" fill="currentColor">
+            <path
+              d="M2 11a1 1 0 011-1h2a1 1 0 011 1v5a1 1 0 01-1 1H3a1 1 0 01-1-1v-5zM8 7a1 1 0 011-1h2a1 1 0 011 1v9a1 1 0 01-1 1H9a1 1 0 01-1-1V7zM14 4a1 1 0 011-1h2a1 1 0 011 1v12a1 1 0 01-1 1h-2a1 1 0 01-1-1V4z" />
+          </svg>
+          Dashboard
+        </button>
+        <button class="nav-item" id="nav-analytics" onclick="go('analytics')">
+          <svg class="ni" viewBox="0 0 20 20" fill="currentColor">
+            <path fill-rule="evenodd"
+              d="M3 3a1 1 0 000 2v8a2 2 0 002 2h2.586l-1.293 1.293a1 1 0 101.414 1.414L10 15.414l2.293 2.293a1 1 0 001.414-1.414L12.414 15H15a2 2 0 002-2V5a1 1 0 100-2H3zm11 4a1 1 0 10-2 0v4a1 1 0 102 0V7zm-3 1a1 1 0 10-2 0v3a1 1 0 102 0V8zM8 9a1 1 0 00-2 0v2a1 1 0 102 0V9z"
+              clip-rule="evenodd" />
+          </svg>
+          Analytics
+        </button>
+        <button class="nav-item" id="nav-insights" onclick="go('insights')">
+          <svg class="ni" viewBox="0 0 20 20" fill="currentColor">
+            <path fill-rule="evenodd"
+              d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z"
+              clip-rule="evenodd" />
+          </svg>
+          Customer Feel
+        </button>
+      </nav>
+      <div class="sidebar-footer">
+        <div class="user-card">
+          <div class="user-av">SP</div>
+          <div class="user-info"><span class="user-name">Sarah Parker</span><span class="user-role">Sales Manager</span>
+          </div>
+          <div class="status-green"></div>
+        </div>
+      </div>
+    </aside>
+
+    <div class="main-wrap">
+      <header class="topbar">
+        <div class="topbar-left">
+          <h1 class="topbar-title" id="topbar-title">Dashboard</h1>
+          <div class="breadcrumb"><span>AI Tele Caller</span><span class="bc-sep">›</span><span
+              id="bc-page">Overview</span></div>
+        </div>
+        <div class="topbar-right">
+          <div class="status-pill"><span class="s-dot"></span>Campaign Active</div>
+          <button class="icon-btn"><svg width="18" height="18" viewBox="0 0 20 20" fill="#64748b">
+              <path
+                d="M10 2a6 6 0 00-6 6v3.586l-.707.707A1 1 0 004 14h12a1 1 0 00.707-1.707L16 11.586V8a6 6 0 00-6-6zM10 18a3 3 0 01-3-3h6a3 3 0 01-3 3z" />
+            </svg><span class="notif-dot"></span></button>
+          <button class="btn btn-primary btn-sm" onclick="openModal()">+ New Campaign</button>
+        </div>
+      </header>
+      <main class="content">
+
+        <!-- CAMPAIGN -->
+        <section class="screen" id="screen-campaign">
+          <div class="section-header">
+            <div>
+              <h2 class="section-title">New Campaign</h2>
+              <p class="section-sub">Configure your AI calling campaign below.</p>
+            </div>
+            <div class="step-pills"><span class="sp active">1 Setup</span><span class="sp-arr">›</span><span
+                class="sp">2 Contacts</span><span class="sp-arr">›</span><span class="sp">3 Launch</span></div>
+          </div>
+          <div class="camp-grid">
+            <div class="form-main">
+              <div class="card form-card">
+                <div class="fsec">Campaign Basics</div>
+                <div class="form-row">
+                  <div class="fg"><label class="fl">Business Name <span class="req">*</span></label><input class="fi"
+                      type="text" placeholder="e.g. Acme Corp" /></div>
+                  <div class="fg"><label class="fl">Product / Service</label><input class="fi" type="text"
+                      placeholder="e.g. Enterprise CRM" /></div>
+                </div>
+                <div class="fg"><label class="fl">Offer / Value Proposition</label><textarea class="fi ta" rows="2"
+                    placeholder="e.g. 30-day free trial..."></textarea></div>
+                <div class="fg"><label class="fl">Campaign Objective</label><textarea class="fi ta" rows="2"
+                    placeholder="Describe the goal..."></textarea></div>
+                <div class="fsec mt28">AI Voice Configuration</div>
+                <div class="voice-opts">
+                  <label class="voice-opt selected" for="v-alex"><input type="radio" id="v-alex" name="voice" checked />
+                    <div class="vo-icon">🎙️</div><span class="vo-name">Alex</span><span
+                      class="vo-tag">Professional</span>
+                  </label>
+                  <label class="voice-opt" for="v-maya"><input type="radio" id="v-maya" name="voice" />
+                    <div class="vo-icon">🎤</div><span class="vo-name">Maya</span><span class="vo-tag">Friendly</span>
+                  </label>
+                  <label class="voice-opt" for="v-sam"><input type="radio" id="v-sam" name="voice" />
+                    <div class="vo-icon">🔊</div><span class="vo-name">Sam</span><span
+                      class="vo-tag">Authoritative</span>
+                  </label>
+                </div>
+                <div class="fsec mt28">Upload Contacts</div>
+                <div class="upload-zone" onclick="this.classList.toggle('drag-over')">
+                  <div>📁</div>
+                  <div class="upload-text">Drop CSV here or <span class="upload-link">browse</span></div>
+                  <div class="upload-hint">CSV, XLSX · Max 50,000 contacts</div>
+                  <button class="btn btn-ghost" onclick="event.stopPropagation()">Simulate 500 contacts</button>
+                </div>
+                <div class="fsec mt28">Schedule &amp; Limits</div>
+                <div class="form-row three-col">
+                  <div class="fg"><label class="fl">Start Date</label><input class="fi" type="date"
+                      value="2026-04-10" /></div>
+                  <div class="fg"><label class="fl">Timezone</label><select class="fi">
+                      <option>IST (UTC+5:30)</option>
+                      <option>EST</option>
+                      <option>PST</option>
+                    </select></div>
+                  <div class="fg"><label class="fl">Daily Limit</label><input class="fi" type="number" value="500" />
+                  </div>
+                </div>
+                <div class="toggle-row">
+                  <div class="ti"><span class="tl">DND Filtering</span><span class="td">Skip contacts outside business
+                      hours</span></div><label class="toggle"><input type="checkbox" checked /><span
+                      class="tr-track"></span></label>
+                </div>
+                <div class="toggle-row">
+                  <div class="ti"><span class="tl">AI Adaptive Script</span><span class="td">AI modifies pitch based on
+                      conversation</span></div><label class="toggle"><input type="checkbox" checked /><span
+                      class="tr-track"></span></label>
+                </div>
+              </div>
+              <div class="form-actions"><button class="btn btn-ghost">Save Draft</button><button
+                  class="btn btn-secondary">Preview Script</button><button class="btn btn-primary"
+                  onclick="go('call')">Start Campaign</button></div>
+            </div>
+            <div class="form-sidebar">
+              <div class="card">
+                <div class="card-header">
+                  <h3 class="card-title">Summary</h3>
+                </div>
+                <div class="sum-rows">
+                  <div class="sum-row"><span>Type</span><span>Cold Outreach</span></div>
+                  <div class="sum-row"><span>Voice</span><span>Alex (Pro)</span></div>
+                  <div class="sum-row"><span>Daily Limit</span><span>500 calls</span></div>
+                  <div class="sum-row"><span>Start Date</span><span>Apr 10, 2026</span></div>
+                </div>
+                <div class="est-reach">
+                  <div class="er-lbl">Estimated Reach</div>
+                  <div class="er-val">2,000 contacts</div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header">
+                  <h3 class="card-title">Quick Actions</h3>
+                </div><button class="qa-btn" onclick="go('call')">▶ Preview Call</button><button class="qa-btn"
+                  onclick="go('analytics')">📊 Last Report</button><button class="qa-btn">⬇ Export Contacts</button>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- CALL -->
+        <section class="screen" id="screen-call">
+          <div class="call-layout">
+            <div class="call-main">
+              <div class="card call-card">
+                <div class="call-top">
+                  <div class="caller-sec">
+                    <div class="caller-av-wrap">
+                      <div class="caller-av">DW</div>
+                      <div class="caller-ring"></div>
+                    </div>
+                    <div class="caller-info">
+                      <div class="caller-name">David Wilson</div>
+                      <div class="caller-co">Nexus Technologies · CTO</div>
+                    </div>
+                  </div>
+                  <div class="call-badges"><span class="cbadge live"><span class="pdot"></span> Live</span><span
+                      class="call-timer" id="call-timer">04:27</span></div>
+                </div>
+                <div class="waveform-wrap">
+                  <div class="waveform" id="waveform"></div>
+                  <div class="wf-lbl">AI Speaking</div>
+                </div>
+                <div class="chat-win" id="chat-win">
+                  <div class="msg ai">
+                    <div class="msg-av">🤖</div>
+                    <div class="msg-bubble">Hi David, this is Alex from AI Tele Caller. I understand Nexus Technologies
+                      is scaling its engineering team — I'd love to share how we help. Do you have 3 minutes?</div>
+                    <div class="msg-time">04:01</div>
+                  </div>
+                  <div class="msg human">
+                    <div class="msg-time">04:08</div>
+                    <div class="msg-bubble">Sure, go ahead. But keep it brief — I'm between meetings.</div>
+                    <div class="msg-av">DW</div>
+                  </div>
+                  <div class="msg ai">
+                    <div class="msg-av">🤖</div>
+                    <div class="msg-bubble">Absolutely. AI Tele Caller automates 90% of your cold calling while
+                      maintaining natural conversation. Our clients see 3x more qualified leads in month one. Would a
+                      quick demo work?</div>
+                    <div class="msg-time">04:16</div>
+                  </div>
+                  <div class="msg human">
+                    <div class="msg-time">04:23</div>
+                    <div class="msg-bubble">That sounds interesting. What CRM integrations do you support?</div>
+                    <div class="msg-av">DW</div>
+                  </div>
+                  <div class="msg ai typing" id="ai-typing">
+                    <div class="msg-av">🤖</div>
+                    <div class="msg-bubble">
+                      <div class="typing-dots"><span></span><span></span><span></span></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="call-input-row"><input class="call-input" type="text" placeholder="Override AI response..."
+                    id="call-override" /><button class="call-send"><svg width="18" height="18" viewBox="0 0 20 20"
+                      fill="currentColor">
+                      <path
+                        d="M10.894 2.553a1 1 0 00-1.788 0l-7 14a1 1 0 001.169 1.409l5-1.429A1 1 0 009 15.571V11a1 1 0 112 0v4.571a1 1 0 00.725.962l5 1.428a1 1 0 001.17-1.408l-7-14z" />
+                    </svg></button></div>
+              </div>
+              <div class="call-controls"><button class="ctrl">🎙 Mute</button><button class="ctrl">⏸
+                  Hold</button><button class="ctrl end" onclick="go('analytics')">📵 End Call</button><button
+                  class="ctrl">↔ Transfer</button></div>
+            </div>
+            <div class="call-sidebar">
+              <div class="card intel-card">
+                <div class="card-header">
+                  <h3 class="card-title">AI Intel</h3><span class="live-badge">Live</span>
+                </div>
+                <div style="margin-bottom:14px">
+                  <div class="is-row"><span>Sentiment</span><span style="color:#16a34a;font-weight:600">Positive
+                      72%</span></div>
+                  <div class="bar-track">
+                    <div class="bar-fill" style="width:72%;background:linear-gradient(90deg,#22c55e,#4ade80)"></div>
+                  </div>
+                </div>
+                <div style="margin-bottom:14px">
+                  <div class="is-row"><span>Confidence</span><span style="color:#2563eb;font-weight:600">High ·
+                      88%</span></div>
+                  <div class="bar-track">
+                    <div class="bar-fill" style="width:88%;background:linear-gradient(90deg,#2563eb,#60a5fa)"></div>
+                  </div>
+                </div>
+                <div style="margin-bottom:14px">
+                  <div class="sec-lbl">Detected Intent</div>
+                  <div class="intent-pills"><span class="ip high">High Interest</span><span class="ip medium">CRM
+                      Question</span><span class="ip neutral">Time Pressed</span></div>
+                </div>
+                <div style="margin-bottom:14px">
+                  <div class="is-row"><span>Conversion Probability</span><span
+                      style="color:#2563eb;font-weight:700;font-size:14px" id="cp-val">76%</span></div>
+                  <div class="bar-track">
+                    <div class="bar-fill" style="width:76%;background:linear-gradient(90deg,#7c3aed,#2563eb)"
+                      id="cp-fill"></div>
+                  </div>
+                </div>
+                <div>
+                  <div class="sec-lbl">Keywords Detected</div>
+                  <div class="kchips">
+                    <span>CRM</span><span>Integration</span><span>Scale</span><span>Demo</span><span>Budget</span>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header">
+                  <h3 class="card-title">AI Suggestions</h3><span class="ai-tag">🤖 Smart</span>
+                </div>
+                <button class="sug-btn active">💬 Mention Salesforce &amp; HubSpot — likely their stack</button>
+                <button class="sug-btn">💰 Offer 2-week free trial to close hesitation</button>
+                <button class="sug-btn">🎯 Ask: "What's your current outreach process?"</button>
+                <button class="sug-btn">🤝 Try closing: "Can we schedule a 20-min demo?"</button>
+              </div>
+              <div class="card">
+                <div class="card-header">
+                  <h3 class="card-title">Call Timeline</h3>
+                </div>
+                <div class="timeline">
+                  <div class="tl-item done">
+                    <div class="tl-dot done"></div>
+                    <div class="tl-text"><span>Call Started</span><span class="tl-time">04:00</span></div>
+                  </div>
+                  <div class="tl-item done">
+                    <div class="tl-dot done"></div>
+                    <div class="tl-text"><span>User Responded</span><span class="tl-time">04:08</span></div>
+                  </div>
+                  <div class="tl-item done">
+                    <div class="tl-dot done"></div>
+                    <div class="tl-text"><span>AI Pitched Product</span><span class="tl-time">04:16</span></div>
+                  </div>
+                  <div class="tl-item active">
+                    <div class="tl-dot active"></div>
+                    <div class="tl-text"><span>CRM Question</span><span class="tl-time">04:23</span></div>
+                  </div>
+                  <div class="tl-item pending">
+                    <div class="tl-dot pending"></div>
+                    <div class="tl-text"><span style="color:#cbd5e1">Awaiting Close</span><span class="tl-time">—</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- DASHBOARD -->
+        <section class="screen active" id="screen-dashboard">
+          <div class="section-header">
+            <div>
+              <h2 class="section-title">Good afternoon, Sarah</h2>
+              <p class="section-sub">Active campaigns overview · Apr 9, 2026</p>
+            </div><button class="btn btn-primary" onclick="openModal()">+ New Campaign</button>
+          </div>
+          <div class="metrics-grid">
+            <div class="metric-card">
+              <div class="mh"><span class="ml">Total Calls Today</span>
+                <div class="mi blue">📞</div>
+              </div>
+              <div class="mv">1,284</div>
+              <div class="mc pos">↑ +12.4% vs yesterday</div>
+            </div>
+            <div class="metric-card">
+              <div class="mh"><span class="ml">Conversion Rate</span>
+                <div class="mi green">💼</div>
+              </div>
+              <div class="mv">23.8%</div>
+              <div class="mc pos">↑ +3.1% this week</div>
+            </div>
+            <div class="metric-card">
+              <div class="mh"><span class="ml">Avg. Call Duration</span>
+                <div class="mi purple">⏱</div>
+              </div>
+              <div class="mv">4m 32s</div>
+              <div class="mc neg">↓ -0.8% vs target</div>
+            </div>
+            <div class="metric-card">
+              <div class="mh"><span class="ml">Demos Booked</span>
+                <div class="mi orange">📅</div>
+              </div>
+              <div class="mv">48</div>
+              <div class="mc pos">↑ +7 vs yesterday</div>
+            </div>
+          </div>
+          <div class="dash-bottom">
+            <div class="card">
+              <div class="card-header">
+                <h3 class="card-title">Active Campaigns</h3><button class="text-btn" onclick="go('campaign')">View all
+                  →</button>
+              </div>
+              <div class="camp-items">
+                <div class="ci">
+                  <div class="ci-dot" style="background:#22c55e"></div>
+                  <div class="ci-info"><span class="ci-name">Q2 Enterprise Outreach</span><span class="ci-meta">482
+                      calls · 26% CVR</span></div>
+                  <div class="ci-prog">
+                    <div class="prog-track">
+                      <div class="prog-fill" style="width:68%"></div>
+                    </div><span>68%</span>
+                  </div>
+                </div>
+                <div class="ci">
+                  <div class="ci-dot" style="background:#2563eb"></div>
+                  <div class="ci-info"><span class="ci-name">SMB Spring Drive</span><span class="ci-meta">318 calls ·
+                      19% CVR</span></div>
+                  <div class="ci-prog">
+                    <div class="prog-track">
+                      <div class="prog-fill" style="width:44%;background:#0ea5e9"></div>
+                    </div><span>44%</span>
+                  </div>
+                </div>
+                <div class="ci">
+                  <div class="ci-dot" style="background:#f97316"></div>
+                  <div class="ci-info"><span class="ci-name">Renewal Boost Campaign</span><span class="ci-meta">204
+                      calls · 31% CVR</span></div>
+                  <div class="ci-prog">
+                    <div class="prog-track">
+                      <div class="prog-fill" style="width:82%;background:#7c3aed"></div>
+                    </div><span>82%</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header">
+                <h3 class="card-title">Recent Activity</h3><span class="live-badge">Live</span>
+              </div>
+              <div class="act-feed">
+                <div class="ai-item">
+                  <div class="ai-av" style="background:#dbeafe;color:#2563eb">JM</div>
+                  <div class="ai-txt"><span class="an">Jordan M.</span> — demo booked after <b>6m 14s</b>
+                    <div class="at">2 min ago · Q2 Enterprise</div>
+                  </div><span class="atag success">Demo</span>
+                </div>
+                <div class="ai-item">
+                  <div class="ai-av" style="background:#fee2e2;color:#dc2626">AL</div>
+                  <div class="ai-txt"><span class="an">Amy L.</span> — not interested<div class="at">5 min ago · SMB
+                      Spring</div>
+                  </div><span class="atag neutral">DNC</span>
+                </div>
+                <div class="ai-item">
+                  <div class="ai-av" style="background:#dcfce7;color:#16a34a">RK</div>
+                  <div class="ai-txt"><span class="an">Raj K.</span> — interested, follow-up sent<div class="at">11 min
+                      ago · Q2 Enterprise</div>
+                  </div><span class="atag info">Warm</span>
+                </div>
+                <div class="ai-item">
+                  <div class="ai-av" style="background:#fef9c3;color:#ca8a04">TC</div>
+                  <div class="ai-txt"><span class="an">Tina C.</span> — callback at 3 PM<div class="at">18 min ago ·
+                      Renewal</div>
+                  </div><span class="atag warn">Callback</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ANALYTICS -->
+        <section class="screen" id="screen-analytics">
+          <div class="section-header">
+            <div>
+              <h2 class="section-title">Call Analytics</h2>
+              <p class="section-sub">Deep insights · Q2 Enterprise Outreach</p>
+            </div><button class="btn btn-secondary">Export CSV</button>
+          </div>
+          <div class="an-summary">
+            <div class="card an-stat">
+              <div class="as-lbl">Calls Made</div>
+              <div class="as-val">3,841</div>
+              <div class="as-sub">↑ 892 vs last period</div>
+            </div>
+            <div class="card an-stat">
+              <div class="as-lbl">Avg Duration</div>
+              <div class="as-val">4m 18s</div>
+              <div class="as-sub">↑ 22s improvement</div>
+            </div>
+            <div class="card an-stat">
+              <div class="as-lbl">Positive Outcomes</div>
+              <div class="as-val">1,102</div>
+              <div class="as-sub">28.7% of total</div>
+            </div>
+            <div class="card an-stat" style="border-left:3px solid #2563eb">
+              <div class="as-lbl">Demos Booked</div>
+              <div class="as-val" style="color:#2563eb">312</div>
+              <div class="as-sub">↑ 34% vs last campaign</div>
+            </div>
+          </div>
+          <div class="an-detail-row">
+            <div class="card" style="padding:24px">
+              <div class="card-header">
+                <h3 class="card-title">Call Summary — David Wilson</h3><span
+                  style="background:#dcfce7;color:#166534;font-size:12px;font-weight:600;padding:4px 10px;border-radius:99px">Positive</span>
+              </div>
+              <div style="display:flex;align-items:center;gap:10px;margin-bottom:16px"><span
+                  style="font-size:12.5px;color:#64748b">Customer Intent</span><span class="ip high">High
+                  Interest</span></div>
+              <div style="margin-bottom:16px">
+                <div class="is-row"><span>Conversion Probability</span><span
+                    style="color:#2563eb;font-weight:700">76%</span></div>
+                <div class="bar-track">
+                  <div class="bar-fill" style="width:76%;background:linear-gradient(90deg,#7c3aed,#2563eb)"></div>
+                </div>
+              </div>
+              <div style="font-size:12.5px;font-weight:500;color:#64748b;margin-bottom:8px">Key Points</div>
+              <ul style="display:flex;flex-direction:column;gap:7px;list-style:none">
+                <li
+                  style="font-size:13px;color:#475569;padding:8px 12px;background:#f8fafc;border-radius:8px;border-left:3px solid #2563eb">
+                  Asked about CRM integrations (Salesforce, HubSpot)</li>
+                <li
+                  style="font-size:13px;color:#475569;padding:8px 12px;background:#f8fafc;border-radius:8px;border-left:3px solid #2563eb">
+                  Time-pressed but showed genuine interest</li>
+                <li
+                  style="font-size:13px;color:#475569;padding:8px 12px;background:#f8fafc;border-radius:8px;border-left:3px solid #2563eb">
+                  Requested demo scheduling follow-up</li>
+              </ul>
+            </div>
+            <div style="display:flex;flex-direction:column;gap:16px">
+              <div class="card" style="padding:18px">
+                <div class="card-header">
+                  <h3 class="card-title">Conversion Funnel</h3>
+                </div>
+                <div style="display:flex;flex-direction:column;gap:10px">
+                  <div class="fn-row"><span>Total Dialed</span>
+                    <div class="fn-track">
+                      <div style="width:100%;height:100%;background:#dbeafe;border-radius:99px"></div>
+                    </div><span>3,841</span>
+                  </div>
+                  <div class="fn-row"><span>Answered</span>
+                    <div class="fn-track">
+                      <div style="width:68%;height:100%;background:#93c5fd;border-radius:99px"></div>
+                    </div><span>68%</span>
+                  </div>
+                  <div class="fn-row"><span>Engaged</span>
+                    <div class="fn-track">
+                      <div style="width:39%;height:100%;background:#60a5fa;border-radius:99px"></div>
+                    </div><span>39%</span>
+                  </div>
+                  <div class="fn-row"><span>Interested</span>
+                    <div class="fn-track">
+                      <div style="width:24%;height:100%;background:#3b82f6;border-radius:99px"></div>
+                    </div><span>24%</span>
+                  </div>
+                  <div class="fn-row"><span>Converted</span>
+                    <div class="fn-track">
+                      <div style="width:29%;height:100%;background:#2563eb;border-radius:99px"></div>
+                    </div><span>29%</span>
+                  </div>
+                </div>
+              </div>
+              <div class="card" style="padding:18px">
+                <div class="card-header">
+                  <h3 class="card-title">Top Scripts</h3>
+                </div>
+                <div class="ts-row"><span class="ts-rank">1</span>
+                  <div style="flex:1">
+                    <div style="font-size:12.5px;margin-bottom:4px">Enterprise Value Prop v3</div>
+                    <div class="bar-track" style="height:5px">
+                      <div class="bar-fill" style="width:84%;background:#2563eb;height:5px"></div>
+                    </div>
+                  </div><span style="color:#2563eb;font-weight:700;font-size:12px">84%</span>
+                </div>
+                <div class="ts-row"><span class="ts-rank">2</span>
+                  <div style="flex:1">
+                    <div style="font-size:12.5px;margin-bottom:4px">ROI First Opener</div>
+                    <div class="bar-track" style="height:5px">
+                      <div class="bar-fill" style="width:71%;background:#2563eb;height:5px"></div>
+                    </div>
+                  </div><span style="color:#2563eb;font-weight:700;font-size:12px">71%</span>
+                </div>
+                <div class="ts-row"><span class="ts-rank">3</span>
+                  <div style="flex:1">
+                    <div style="font-size:12.5px;margin-bottom:4px">Pain Point Discovery</div>
+                    <div class="bar-track" style="height:5px">
+                      <div class="bar-fill" style="width:63%;background:#2563eb;height:5px"></div>
+                    </div>
+                  </div><span style="color:#2563eb;font-weight:700;font-size:12px">63%</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- CUSTOMER FEEL -->
+        <section class="screen" id="screen-insights">
+          <div class="section-header">
+            <div>
+              <h2 class="section-title">Customer Feel Summary</h2>
+              <p class="section-sub">Behavioral insights across all campaigns · Apr 2026</p>
+            </div><button class="btn btn-secondary">Export Report</button>
+          </div>
+          <div class="ins-top-grid">
+            <div class="card">
+              <div class="card-header">
+                <h3 class="card-title">Overall Sentiment</h3>
+              </div>
+              <div style="display:flex;align-items:center;gap:20px"><svg viewBox="0 0 120 120" width="120" height="120">
+                  <circle cx="60" cy="60" r="46" fill="none" stroke="#dcfce7" stroke-width="18"
+                    stroke-dasharray="289.03" stroke-dashoffset="0" transform="rotate(-90 60 60)" />
+                  <circle cx="60" cy="60" r="46" fill="none" stroke="#fef9c3" stroke-width="18"
+                    stroke-dasharray="289.03" stroke-dashoffset="202" transform="rotate(-90 60 60)" />
+                  <circle cx="60" cy="60" r="46" fill="none" stroke="#fee2e2" stroke-width="18"
+                    stroke-dasharray="289.03" stroke-dashoffset="245" transform="rotate(-90 60 60)" /><text x="60"
+                    y="57" text-anchor="middle" font-size="15" font-weight="700" fill="#0f172a">70%</text><text x="60"
+                    y="72" text-anchor="middle" font-size="9" fill="#64748b">Positive</text>
+                </svg>
+                <div style="display:flex;flex-direction:column;gap:8px">
+                  <div style="display:flex;align-items:center;gap:8px;font-size:13px"><span
+                      style="width:10px;height:10px;border-radius:50%;background:#22c55e;display:inline-block"></span>Positive<span
+                      style="margin-left:auto;font-weight:600">70%</span></div>
+                  <div style="display:flex;align-items:center;gap:8px;font-size:13px"><span
+                      style="width:10px;height:10px;border-radius:50%;background:#eab308;display:inline-block"></span>Neutral<span
+                      style="margin-left:auto;font-weight:600">15%</span></div>
+                  <div style="display:flex;align-items:center;gap:8px;font-size:13px"><span
+                      style="width:10px;height:10px;border-radius:50%;background:#ef4444;display:inline-block"></span>Negative<span
+                      style="margin-left:auto;font-weight:600">15%</span></div>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header">
+                <h3 class="card-title">Avg Conversion Probability</h3>
+              </div>
+              <div
+                style="font-size:48px;font-weight:800;color:#2563eb;text-align:center;letter-spacing:-2px;margin:10px 0">
+                68%</div>
+              <div class="bar-track" style="height:10px;margin:12px 0">
+                <div class="bar-fill" style="width:68%;background:linear-gradient(90deg,#7c3aed,#2563eb)"></div>
+              </div>
+              <p style="font-size:12px;color:#94a3b8;text-align:center">Based on 3,841 calls across 3 campaigns</p>
+            </div>
+            <div class="card">
+              <div class="card-header">
+                <h3 class="card-title">Most Common Reactions</h3>
+              </div>
+              <div style="display:flex;flex-direction:column;gap:10px">
+                <div style="display:flex;align-items:center;gap:10px"><span>🤔</span><span
+                    style="min-width:110px;font-size:12.5px">Asked for Info</span>
+                  <div class="bar-track">
+                    <div class="bar-fill" style="width:78%"></div>
+                  </div><span style="font-size:12px;font-weight:600">78%</span>
+                </div>
+                <div style="display:flex;align-items:center;gap:10px"><span>✅</span><span
+                    style="min-width:110px;font-size:12.5px">Agreed to Demo</span>
+                  <div class="bar-track">
+                    <div class="bar-fill" style="width:45%;background:#22c55e"></div>
+                  </div><span style="font-size:12px;font-weight:600">45%</span>
+                </div>
+                <div style="display:flex;align-items:center;gap:10px"><span>⏰</span><span
+                    style="min-width:110px;font-size:12.5px">Requested Callback</span>
+                  <div class="bar-track">
+                    <div class="bar-fill" style="width:32%;background:#eab308"></div>
+                  </div><span style="font-size:12px;font-weight:600">32%</span>
+                </div>
+                <div style="display:flex;align-items:center;gap:10px"><span>❌</span><span
+                    style="min-width:110px;font-size:12.5px">Not Interested</span>
+                  <div class="bar-track">
+                    <div class="bar-fill" style="width:22%;background:#ef4444"></div>
+                  </div><span style="font-size:12px;font-weight:600">22%</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="ins-bottom-grid">
+            <div class="card">
+              <div class="card-header">
+                <h3 class="card-title">Frequently Raised Objections</h3><span class="ai-tag">🤖 Analyzed</span>
+              </div>
+              <div style="display:flex;flex-direction:column;gap:12px">
+                <div
+                  style="display:flex;align-items:center;gap:12px;padding:12px;background:#f8fafc;border-radius:10px">
+                  <div
+                    style="width:24px;height:24px;border-radius:6px;background:#e2e8f0;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700">
+                    1</div>
+                  <div style="flex:1">
+                    <div style="font-size:13px;font-weight:500">"Too expensive / budget constraints"</div>
+                    <div style="font-size:11.5px;color:#94a3b8">34% of negative calls</div>
+                  </div><span
+                    style="background:#fee2e2;color:#dc2626;font-size:10.5px;font-weight:600;padding:2px 8px;border-radius:99px">High</span>
+                </div>
+                <div
+                  style="display:flex;align-items:center;gap:12px;padding:12px;background:#f8fafc;border-radius:10px">
+                  <div
+                    style="width:24px;height:24px;border-radius:6px;background:#e2e8f0;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700">
+                    2</div>
+                  <div style="flex:1">
+                    <div style="font-size:13px;font-weight:500">"Already using a competitor"</div>
+                    <div style="font-size:11.5px;color:#94a3b8">28% of negative calls</div>
+                  </div><span
+                    style="background:#fee2e2;color:#dc2626;font-size:10.5px;font-weight:600;padding:2px 8px;border-radius:99px">High</span>
+                </div>
+                <div
+                  style="display:flex;align-items:center;gap:12px;padding:12px;background:#f8fafc;border-radius:10px">
+                  <div
+                    style="width:24px;height:24px;border-radius:6px;background:#e2e8f0;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700">
+                    3</div>
+                  <div style="flex:1">
+                    <div style="font-size:13px;font-weight:500">"Not the right time / busy"</div>
+                    <div style="font-size:11.5px;color:#94a3b8">22% of all calls</div>
+                  </div><span
+                    style="background:#fef9c3;color:#92400e;font-size:10.5px;font-weight:600;padding:2px 8px;border-radius:99px">Med</span>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header">
+                <h3 class="card-title">Top Performing Strategies</h3>
+              </div>
+              <div style="display:flex;flex-direction:column;gap:12px">
+                <div
+                  style="display:flex;align-items:center;gap:14px;padding:14px;background:#f8fafc;border-radius:12px">
+                  <span style="font-size:22px">🏆</span>
+                  <div style="flex:1">
+                    <div style="font-size:13.5px;font-weight:600">Lead with ROI before pricing</div>
+                    <div style="font-size:12px;color:#64748b">Increased engagement by 41%</div>
+                  </div><span style="font-size:15px;font-weight:800;color:#2563eb">84%</span>
+                </div>
+                <div
+                  style="display:flex;align-items:center;gap:14px;padding:14px;background:#f8fafc;border-radius:12px">
+                  <span style="font-size:22px">💬</span>
+                  <div style="flex:1">
+                    <div style="font-size:13.5px;font-weight:600">Ask discovery questions early</div>
+                    <div style="font-size:12px;color:#64748b">Reduced early hang-ups by 29%</div>
+                  </div><span style="font-size:15px;font-weight:800;color:#2563eb">71%</span>
+                </div>
+                <div
+                  style="display:flex;align-items:center;gap:14px;padding:14px;background:#f8fafc;border-radius:12px">
+                  <span style="font-size:22px">⚡</span>
+                  <div style="flex:1">
+                    <div style="font-size:13.5px;font-weight:600">Follow-up within 1 hour</div>
+                    <div style="font-size:12px;color:#64748b">2.1x conversion rate</div>
+                  </div><span style="font-size:15px;font-weight:800;color:#2563eb">63%</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+      </main>
+    </div>
+  </div>
+  <script src="app.js"></script>
+</body>
+
+</html>
